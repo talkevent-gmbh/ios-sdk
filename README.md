@@ -1,19 +1,22 @@
+![alt tag](http://www.talkevent.de/wp-content/uploads/2015/07/talkevent_altern_logo_noclaim.png)
+
 # TalkEventSDK
 
-Mit Hilfe des TalKEventSDK können Sie die Video-Chat-Funktion von talkevent in Ihre eigene iOS-App einbauen. 
+Mit Hilfe des TalKEventSDK können Sie die Video-Chat-Funktion von talkevent in Ihre iOS-App einbauen. Die Benutzer Ihrer App können dann direkt über ihr iOS-Gerät per Videochat mit Ihren Beratern in Kontakt treten. 
 Dazu müssen Sie registrierter Partner von talkevent sein. Weitere Informationen finden Sie unter https://www.talkevent.de.
 
 ## Installation
 
-### Pods
 Das Framework wird über CocoaPods (https://cocoapods.org/) eingebunden. 
 Falls Sie in Ihrem iOS-Projekt noch kein CocoaPods verwenden, finden Sie hier weitere Informationen: https://guides.cocoapods.org/using/using-cocoapods.html
 
-Anschließend fügen Sie das Framework mit folgender Zeile zu Ihrem Podfile hinzu und installieren wie gehabt via `$ pod install`:
+Anschließend fügen Sie das Framework mit folgender Zeile zu Ihrem Podfile hinzu:
 
 <code>
 pod 'TalkEventSDK'
 </code>
+
+Anschließend installieren Sie wie doe Pods via `$ pod install`.
 
 ## Abhängigkeiten
 
@@ -34,9 +37,9 @@ Nach erfolgreicher Einbindung können Sie in Ihrer App nun an beliebiger Stelle 
 
 In dem ViewController muss das Framework zunächst mit folgendem Befehl importiert werden:
 
-<pre><code>
+<code>
 import TalkEventSDK
-</code></pre>
+</code>
 
 Anschließend kann das Framework in Ihrem ViewController instanziiert und gestartet werden.
 
@@ -48,9 +51,9 @@ talkevent.open()
 Zusätzlich muss der ViewController das Interface `TalkEventSDKDelegate` implementieren.
 Dieser Delegate benötigt lediglich die Funktion <i>talkEventFrameworkDone</i> um zu signalisieren, wann das Framework geschlossen werden sollte (nach Ende des Telefonates). 
 
-<pre><code>
+<code>
 func talkEventFrameworkDone(error: Error?) {...}
-</code></pre>
+</code>
 
 ## Einstellungsmöglichkeiten
 
