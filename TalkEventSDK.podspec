@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.author       = { "Talkevent GmbH" => "rz@talkevent.de" }
   s.platform     = :ios, "8.3"
   s.license      = { :type => "Copyright", :file => "LICENSE" }
-  s.source       = { :git => "https://github.com/talkevent-gmbh/ios-sdk.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/talkevent-gmbh/ios-sdk.git", :tag => "v#{s.version}" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
