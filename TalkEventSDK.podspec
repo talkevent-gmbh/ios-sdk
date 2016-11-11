@@ -16,9 +16,9 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TalkEventSDK"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of TalkEventSDK."
-  s.description  = "We have to insert a description here!"
+  s.version      = "0.3.0"
+  s.summary      = "This is a video framework for consultants"
+  s.description  = "This is a video framework for consultants. In this case, a connection to a consultant is established, which can provide support."
   s.homepage     = "https://github.com/talkevent-gmbh/ios-sdk"
   s.author       = { "Talkevent GmbH" => "rz@talkevent.de" }
   s.platform     = :ios, "8.3"
@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files = "./*.{h,m,swift}"
+  # s.source_files = "*.{h,m,swift, framework}"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -46,7 +46,7 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  s.resources = "./*.{png,jpeg,jpg,pdf,storyboard,xcassets,ttf,framework}"
+  # s.resources = "*.{png,jpeg,jpg,pdf,storyboard,xcassets,ttf,framework}"
 
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
