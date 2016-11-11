@@ -1,60 +1,60 @@
 # TalkEventSDK
 
+Mit Hilfe des TalKEventSDK können Sie die Video-Chat-Funktion von talkevent in Ihre eigene iOS-App einbauen. 
+Dazu müssen Sie registrierter Partner von talkevent sein. Weitere Informationen finden Sie unter https://www.talkevent.de.
+
 ## Installation
 
 ### Pods
-Das Framework wurde bei Cocoapods(https://cocoapods.org/) hochgeladen und dient zur vereinfachten Installation.
-Wie Sie Ihr Projekt mit Cococapods initialisieren entnehmen Sie bitte unter folgendem Link: https://guides.cocoapods.org/using/using-cocoapods.html
+Das Framework wird über CocoaPods (https://cocoapods.org/) eingebunden. 
+Falls Sie in Ihrem iOS-Projekt noch kein CocoaPods verwenden, finden Sie hier weitere Informationen: https://guides.cocoapods.org/using/using-cocoapods.html
 
-Anschließend das Framework mit folender Zeile zu Ihrer Podfile hinzufügen:
+Anschließend fügen Sie das Framework mit folgender Zeile zu Ihrem Podfile hinzu und installieren wie gehabt via `$ pod install`:
 
-<pre><code>
+<code>
 pod 'TalkEventSDK'
-</code></pre>
+</code>
+
+## Abhängigkeiten
+
+Das TalkEventSDK benötigt mindestens iOS 8.3.
 
 ## Anbindung 
 
-### pList-Datei
-
-Sollte dies noch nicht geschehen sein, müssen folgende drei Einstellungen in der pList-Datei Ihrer Appplikation hinterlegt werden:
+Für den Videochat benötigt das Framework und damit auch Ihre App Zugriff auf die Kamera und das Mikrophon des Gerätes. Seit iOS 10 müssen dazu folgende Hinweise in der plist-Datei Ihrer Anwendung hinterlegt sein. Sollte Ihre plist-Datei diese noch nicht enthalten, fügen Sie bitte diese Einträge mit entsprechenden Erklärungstexten hinzu:
 
 <ul>
 <li>Privacy - Microphone Usage Description : 'INSERT DESCRIPTION HERE'</li>
 <li>Privacy - Camera Usage Description : 'INSERT DESCRIPTION HERE'</li>
-<li>
-    App Transport Security Settings
-    <ul>
-        <li>Allow Arbitrary Loads : YES</li>
-    </ul>
-</li>
 </ul>
 
-### ViewController
+### Start des Videochats
 
-In Ihrem ViewController muss das Framework mit folgendem Befehl importiert werden:
+Nach erfolgreicher Einbindung können Sie in Ihrer App nun an beliebiger Stelle einen Button einfügen, über welchen der Videochat mit dem Berater gestartet werden kann. 
+
+In dem ViewController muss das Framework zunächst mit folgendem Befehl importiert werden:
 
 <pre><code>
 import TalkEventSDK
 </code></pre>
 
-Zur Verwendung des TalkEventSDK ist eine integration des TalkEventSDKDelegate unabdingbar!
-Dieser Delegate benötigt lediglich die Funktion <i>talkEventFrameworkDone</i> um zu signalisieren, wann das Framework geschlossen werden muss. 
-
-<pre><code>
-func talkEventFrameworkDone(error: Error?) {...}
-</code></pre>
-
-
-Anschließend kann das Framework in Ihrem ViewController instantiert und gestartet werden.
+Anschließend kann das Framework in Ihrem ViewController instanziiert und gestartet werden.
 
 <pre><code>
 let talkevent = TalkEventSDK(delegate: self)
 talkevent.open()
 </code></pre>
 
+Zusätzlich muss der ViewController das Interface `TalkEventSDKDelegate` implementieren.
+Dieser Delegate benötigt lediglich die Funktion <i>talkEventFrameworkDone</i> um zu signalisieren, wann das Framework geschlossen werden sollte (nach Ende des Telefonates). 
+
+<pre><code>
+func talkEventFrameworkDone(error: Error?) {...}
+</code></pre>
+
 ## Einstellungsmöglichkeiten
 
-Das Design des Frameworks lässt sich im gewissen Maße verändern. Hierfür müssen nur einige Methode aufgerufen und gesetzt werden, <b>bevor</b> die Funktion 'talkevent.open()' aufgerufen wird.
+Das Design des Frameworks lässt sich dem Design Ihrer App anpassen. Hierfür können folgende Eigenschaften gesetzt werden, <b>bevor</b> die Funktion 'talkevent.open()' aufgerufen wird.
 
 Folgende Funktionen stehen hier zur Verfügung:
 
@@ -81,7 +81,7 @@ Diese Funktion bezieht sich auf die VideoView und setzt die Farbe der Buttons f�
 
 ### setCameraOverlayColor
 
-Diese Funktion bezieht sich auf die VideoView und setzt die Farbe der Maske, die ersteint, wenn man seine Kamera deaktiviert.
+Diese Funktion bezieht sich auf die VideoView und setzt die Farbe der Maske, die erscheint, wenn der Besucher seine Kamera deaktiviert.
 
 ### setEndCallBtnColor
 
