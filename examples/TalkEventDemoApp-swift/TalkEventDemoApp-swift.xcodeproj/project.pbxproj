@@ -1,0 +1,315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F565C0A11DDA0E7A008CBD4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F565C0A01DDA0E7A008CBD4C /* AppDelegate.swift */; };
+		F565C0A31DDA0E7A008CBD4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F565C0A21DDA0E7A008CBD4C /* ViewController.swift */; };
+		F565C0A61DDA0E7A008CBD4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F565C0A41DDA0E7A008CBD4C /* Main.storyboard */; };
+		F565C0A81DDA0E7A008CBD4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F565C0A71DDA0E7A008CBD4C /* Assets.xcassets */; };
+		F565C0AB1DDA0E7A008CBD4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F565C0A91DDA0E7A008CBD4C /* LaunchScreen.storyboard */; };
+		F565C0B31DDA1222008CBD4C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F565C0B21DDA1222008CBD4C /* Podfile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F565C09D1DDA0E7A008CBD4C /* TalkEventDemoApp-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TalkEventDemoApp-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F565C0A01DDA0E7A008CBD4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F565C0A21DDA0E7A008CBD4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F565C0A51DDA0E7A008CBD4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F565C0A71DDA0E7A008CBD4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F565C0AA1DDA0E7A008CBD4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F565C0AC1DDA0E7A008CBD4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F565C0B21DDA1222008CBD4C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F565C09A1DDA0E7A008CBD4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F565C0941DDA0E7A008CBD4C = {
+			isa = PBXGroup;
+			children = (
+				F565C0B21DDA1222008CBD4C /* Podfile */,
+				F565C09F1DDA0E7A008CBD4C /* TalkEventDemoApp-swift */,
+				F565C09E1DDA0E7A008CBD4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F565C09E1DDA0E7A008CBD4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F565C09D1DDA0E7A008CBD4C /* TalkEventDemoApp-swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F565C09F1DDA0E7A008CBD4C /* TalkEventDemoApp-swift */ = {
+			isa = PBXGroup;
+			children = (
+				F565C0A01DDA0E7A008CBD4C /* AppDelegate.swift */,
+				F565C0A21DDA0E7A008CBD4C /* ViewController.swift */,
+				F565C0A41DDA0E7A008CBD4C /* Main.storyboard */,
+				F565C0A71DDA0E7A008CBD4C /* Assets.xcassets */,
+				F565C0A91DDA0E7A008CBD4C /* LaunchScreen.storyboard */,
+				F565C0AC1DDA0E7A008CBD4C /* Info.plist */,
+			);
+			path = "TalkEventDemoApp-swift";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F565C09C1DDA0E7A008CBD4C /* TalkEventDemoApp-swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F565C0AF1DDA0E7A008CBD4C /* Build configuration list for PBXNativeTarget "TalkEventDemoApp-swift" */;
+			buildPhases = (
+				F565C0991DDA0E7A008CBD4C /* Sources */,
+				F565C09A1DDA0E7A008CBD4C /* Frameworks */,
+				F565C09B1DDA0E7A008CBD4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TalkEventDemoApp-swift";
+			productName = "TalkEventDemoApp-swift";
+			productReference = F565C09D1DDA0E7A008CBD4C /* TalkEventDemoApp-swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F565C0951DDA0E7A008CBD4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = talkevent;
+				TargetAttributes = {
+					F565C09C1DDA0E7A008CBD4C = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = S76H73ZBR7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F565C0981DDA0E7A008CBD4C /* Build configuration list for PBXProject "TalkEventDemoApp-swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F565C0941DDA0E7A008CBD4C;
+			productRefGroup = F565C09E1DDA0E7A008CBD4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F565C09C1DDA0E7A008CBD4C /* TalkEventDemoApp-swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F565C09B1DDA0E7A008CBD4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F565C0AB1DDA0E7A008CBD4C /* LaunchScreen.storyboard in Resources */,
+				F565C0A81DDA0E7A008CBD4C /* Assets.xcassets in Resources */,
+				F565C0B31DDA1222008CBD4C /* Podfile in Resources */,
+				F565C0A61DDA0E7A008CBD4C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F565C0991DDA0E7A008CBD4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F565C0A31DDA0E7A008CBD4C /* ViewController.swift in Sources */,
+				F565C0A11DDA0E7A008CBD4C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F565C0A41DDA0E7A008CBD4C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F565C0A51DDA0E7A008CBD4C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F565C0A91DDA0E7A008CBD4C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F565C0AA1DDA0E7A008CBD4C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F565C0AD1DDA0E7A008CBD4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F565C0AE1DDA0E7A008CBD4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F565C0B01DDA0E7A008CBD4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S76H73ZBR7;
+				INFOPLIST_FILE = "TalkEventDemoApp-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.talkevent.TalkEventDemoApp-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F565C0B11DDA0E7A008CBD4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S76H73ZBR7;
+				INFOPLIST_FILE = "TalkEventDemoApp-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.talkevent.TalkEventDemoApp-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F565C0981DDA0E7A008CBD4C /* Build configuration list for PBXProject "TalkEventDemoApp-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F565C0AD1DDA0E7A008CBD4C /* Debug */,
+				F565C0AE1DDA0E7A008CBD4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F565C0AF1DDA0E7A008CBD4C /* Build configuration list for PBXNativeTarget "TalkEventDemoApp-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F565C0B01DDA0E7A008CBD4C /* Debug */,
+				F565C0B11DDA0E7A008CBD4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F565C0951DDA0E7A008CBD4C /* Project object */;
+}
