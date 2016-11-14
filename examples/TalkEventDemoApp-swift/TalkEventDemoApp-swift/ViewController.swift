@@ -35,10 +35,10 @@ class ViewController: UIViewController, TalkEventSDKDelegate {
     
     // MARK: - TalkEventSDKDelegate
     func talkEventFrameworkDone(error: Error?) {
-        let bundle = Bundle(for: TalkEventStartViewController.self)
+        let bundle = Bundle(for: ViewController.self)
         let storyboard = UIStoryboard(name: "Main", bundle: bundle)
         
-        if let vc = storyboard.instantiateInitialViewController() as? TalkEventStartViewController {
+        if let vc = storyboard.instantiateInitialViewController() as? ViewController {
             UIApplication.shared.keyWindow!.rootViewController = vc
         }
     }
