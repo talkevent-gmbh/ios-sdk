@@ -17,8 +17,8 @@ Pod::Spec.new do |s|
 
   s.name         = "TalkEventSDK"
   s.version      = "0.3.0"
-  s.summary      = "This is a video framework for consultants"
-  s.description  = "This is a video framework for consultants. In this case, a connection to a consultant is established, which can provide support."
+  s.summary      = "This SDK allows you to integrate the talkevent videochat support in your app."
+  s.description  = "Enable your application with videochat support using the talkevent service. You need to be a registered partner of talkevent to use this SDK."
   s.homepage     = "https://github.com/talkevent-gmbh/ios-sdk"
   s.author       = { "Talkevent GmbH" => "rz@talkevent.de" }
   s.platform     = :ios, "8.3"
