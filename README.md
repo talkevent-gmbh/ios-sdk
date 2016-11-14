@@ -18,15 +18,15 @@ pod 'TalkEventSDK'
 
 Und nach dem letzten 'end' in der Podfile:
 
-<code>
+<pre><code>
 post_install do |installer|
-installer.pods_project.targets.each do |target|
-target.build_configurations.each do |config|
-config.build_settings['ENABLE_BITCODE'] = 'NO'
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['ENABLE_BITCODE'] = 'NO'
+    end
+  end
 end
-end
-end
-</code>
+</code></pre>
 
 Anschließend installieren Sie die Pods via `$ pod install`.
 
@@ -42,6 +42,11 @@ Für den Videochat benötigt das Framework und damit auch Ihre App Zugriff auf d
 <li>Privacy - Microphone Usage Description : 'INSERT DESCRIPTION HERE'</li>
 <li>Privacy - Camera Usage Description : 'INSERT DESCRIPTION HERE'</li>
 </ul>
+
+### Bitcode
+Aktuell wird <b>kein Bitcode</b> von der App unterstützt! Dieses muss folglich deaktiviert werden.
+
+Unter Project > Build Settings nach 'ENABLE_BITCODE' suchen und auf 'No' setzen
 
 ### Start des Videochats
 
