@@ -120,6 +120,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import AI_KurentoToolbox;
 @import WebRTC;
 @import CoreGraphics;
+@import Foundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -157,7 +158,6 @@ SWIFT_CLASS("_TtC12TalkEventSDK42TalkEventConnectToConsultantViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified instructionLabel;
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView * _Null_unspecified loadingAnimation;
 @property (nonatomic, readonly, strong) NSBundle * _Nonnull frameworkBundle;
-@property (nonatomic, copy) NSString * _Nonnull apiUrl;
 @property (nonatomic, copy) NSString * _Nullable upstreamId;
 @property (nonatomic, copy) NSString * _Nullable downstreamId;
 @property (nonatomic, copy) NSString * _Nullable consultant;
@@ -217,7 +217,8 @@ SWIFT_CLASS("_TtC12TalkEventSDK16TalkEventKurento")
 @property (nonatomic, strong) NBMPeer * _Nullable remotePeer;
 @property (nonatomic) BOOL connected;
 @property (nonatomic) NSInteger reconnectCount;
-@property (nonatomic) BOOL wasManuallyClosed;
+@property (nonatomic) BOOL shouldTryReconnect;
+@property (nonatomic) BOOL wasDisconnected;
 @property (nonatomic, copy) NSString * _Nullable closedMsg;
 @property (nonatomic) BOOL backCameraOn;
 - (nonnull instancetype)initWithWsURL:(NSURL * _Null_unspecified)wsURL username:(NSString * _Null_unspecified)username roomName:(NSString * _Null_unspecified)roomName OBJC_DESIGNATED_INITIALIZER;
@@ -347,6 +348,8 @@ SWIFT_CLASS("_TtC12TalkEventSDK12TalkEventSDK")
 @interface TalkEventSDK : UIViewController
 - (nonnull instancetype)init;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)setApiUrlWithUrl:(NSURL * _Null_unspecified)url;
+- (void)setKurentoRoomUrlWithUrl:(NSURL * _Null_unspecified)url;
 - (void)setClientNumberWithStr:(NSString * _Null_unspecified)str;
 - (void)setLogoWithImage:(UIImage * _Null_unspecified)image;
 - (void)setBackgroundColorWithColor:(UIColor * _Null_unspecified)color;
@@ -373,7 +376,6 @@ SWIFT_CLASS("_TtC12TalkEventSDK39TalkEventSearchConsultantViewController")
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView * _Null_unspecified loadingAnimation;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified closeBtnConst;
 @property (nonatomic, readonly, strong) NSBundle * _Nonnull frameworkBundle;
-@property (nonatomic, copy) NSString * _Nonnull apiUrl;
 @property (nonatomic) BOOL loading;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
