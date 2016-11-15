@@ -51,7 +51,6 @@
 
 #pragma mark - HelperFunctions
 - (void)initStyling {
-    self.view.backgroundColor = [UIColor colorWithRed: 52/255 green: 73/255 blue: 94/255 alpha: 1.0];
     self.logoImageview.image = [UIImage imageNamed: @"talkevent_logo"];
     self.startButton.backgroundColor = [UIColor clearColor];
     self.startButton.layer.cornerRadius = self.startButton.frame.size.height / 2;
