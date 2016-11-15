@@ -341,12 +341,14 @@ SWIFT_CLASS("_TtC12TalkEventSDK30TalkEventKurentoViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@protocol TalkEventSDKDelegate;
 @class UIImage;
 @class UIColor;
 
 SWIFT_CLASS("_TtC12TalkEventSDK12TalkEventSDK")
 @interface TalkEventSDK : UIViewController
 - (nonnull instancetype)init;
+- (nonnull instancetype)initWithDelegate:(id <TalkEventSDKDelegate> _Null_unspecified)delegate OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)setApiUrlWithUrl:(NSURL * _Null_unspecified)url;
 - (void)setKurentoRoomUrlWithUrl:(NSURL * _Null_unspecified)url;
@@ -362,6 +364,12 @@ SWIFT_CLASS("_TtC12TalkEventSDK12TalkEventSDK")
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_PROTOCOL("_TtP12TalkEventSDK20TalkEventSDKDelegate_")
+@protocol TalkEventSDKDelegate
+- (void)talkEventFrameworkDoneWithError:(NSError * _Nullable)error;
 @end
 
 
