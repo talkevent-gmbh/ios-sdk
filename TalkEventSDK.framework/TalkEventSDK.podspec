@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TalkEventSDK"
-  s.version      = "0.3.2"
+  s.version      = "0.4.0"
   s.summary      = "A short description of TalkEventSDK."
   s.description  = "We have to insert a description here!"
   s.homepage     = "https://github.com/talkevent-gmbh/ios-sdk"
